@@ -1,8 +1,8 @@
 postMerge :
   preRun: 
     command:
-      - pnpm install
-      - pnpm exec nx affected --target=build --parallel=3 
+      - npm install
+     
       
   
   subModules:          #Not to be changed
