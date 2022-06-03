@@ -1,7 +1,7 @@
 postMerge :
   preRun: 
     command:
-      - npm install
+      - pnpm install
       
   
   subModules:          #Not to be changed
@@ -108,9 +108,7 @@ postMerge :
           - "./test/TestGenerator.spec.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -123,9 +121,7 @@ postMerge :
           - "./test/StackTraceTab.spec.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -139,9 +135,7 @@ postMerge :
           - "./test/instrument.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -156,9 +150,7 @@ postMerge :
           - "./test/immutable.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -173,9 +165,7 @@ postMerge :
 
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
