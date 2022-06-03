@@ -1,7 +1,8 @@
 postMerge :
   preRun: 
     command:
-      - npm install
+      - pnpm install
+      - pnpm exec nx affected --target=build --parallel=3
       
   
   subModules:          #Not to be changed
@@ -14,9 +15,7 @@ postMerge :
           - "./test/index.test.ts"
         
         framework : jest
-        preRun:
-          command:
-            - npm run build
+        
           
         postRun:
             command:
@@ -29,9 +28,7 @@ postMerge :
           - "./test/integration.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm run build
+        
 
         postRun:
             command:
@@ -44,10 +41,7 @@ postMerge :
           - "./test/*.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm run build
-
+        
         postRun:
             command:
               - node --version 
@@ -59,10 +53,7 @@ postMerge :
           - "./test/index.test.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i 
-            - npm run build
+        
 
         postRun:
             command:
@@ -76,10 +67,7 @@ postMerge :
           - "./test/objType.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
-
+       
         postRun:
             command:
               - node --version 
@@ -91,9 +79,7 @@ postMerge :
           - "./test/app.spec.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -108,9 +94,7 @@ postMerge :
           - "./test/TestGenerator.spec.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -123,9 +107,7 @@ postMerge :
           - "./test/StackTraceTab.spec.tsx"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -139,9 +121,7 @@ postMerge :
           - "./test/instrument.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -156,9 +136,7 @@ postMerge :
           - "./test/immutable.spec.ts"
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
@@ -173,9 +151,7 @@ postMerge :
 
 
         framework : jest
-        preRun:
-          command:
-            - npm i
+        
 
         postRun:
             command:
