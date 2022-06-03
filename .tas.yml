@@ -109,6 +109,9 @@ postMerge :
 
         framework : jest
         
+        preRun:
+          command:
+            - pnpm i
 
         postRun:
             command:
@@ -122,6 +125,9 @@ postMerge :
 
         framework : jest
         
+        preRun:
+          command:
+            - pnpm i
 
         postRun:
             command:
