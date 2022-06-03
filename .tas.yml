@@ -123,7 +123,10 @@ postMerge :
 
         framework : jest
         
-
+        preRun:
+          command:
+            - npm i
+            
         postRun:
             command:
               - node --version 
