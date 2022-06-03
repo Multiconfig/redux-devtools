@@ -2,6 +2,7 @@ postMerge :
   preRun: 
     command:
       - pnpm install
+      - pnpm run format:check
       
   
   subModules:          #Not to be changed
@@ -109,10 +110,7 @@ postMerge :
 
         framework : jest
         
-        preRun:
-          command:
-            - pnpm i
-
+        
         postRun:
             command:
               - node --version 
@@ -125,9 +123,6 @@ postMerge :
 
         framework : jest
         
-        preRun:
-          command:
-            - pnpm i
 
         postRun:
             command:
